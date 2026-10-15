@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://page-context.a-voronov.space/sitemap.xml

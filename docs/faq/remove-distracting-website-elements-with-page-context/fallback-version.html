@@ -1,0 +1,118 @@
+---
+permalink: faq/Remove-Distracting-Website-Elements-with-Page-Context/index.html
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Remove Distracting Website Elements with Page Context</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Remove Distracting Website Elements with Page Context" />
+    <meta name="description" content="Hide distracting elements on any website. Use the Page Context extension to set transparency for YouTube sidebars, buttons, and more with simple CSS selectors." />
+    <meta name="keywords" content="browser extension, hide page elements, block distractions, customize opacity, YouTube sidebar, CSS selector, visual effects, focus tool, web customizer" />
+    <link rel="canonical" href="https://page-context.a-voronov.space/faq/remove-distracting-website-elements-with-page-context/" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon-128.png">
+        <link rel="stylesheet" href="/assets/css/faq.css">
+        <link rel="stylesheet" href="/assets/css/common.css">
+    <script type="application/ld&#x2B;json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "screenshot": "https://page-context.a-voronov.space/assets/social/01-popup-demo-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Anton Voronov",
+        "jobTitle": "Full-Stack Developer",
+        "sameAs": [
+          "https://www.youtube.com/@page-context"
+        ]
+      },
+      "name": "Page context",
+      "description": "Hide distracting elements on any website. Use the Page Context extension to set transparency for YouTube sidebars, buttons, and more with simple CSS selectors.",
+      "applicationCategory": "Browser Extension",
+      "keywords": "browser extension, hide page elements, block distractions, customize opacity, YouTube sidebar, CSS selector, visual effects, focus tool, web customizer",
+      "featureList": [
+        "Visual effects",
+        "Brightness",
+        "3D anaglyph",
+        "Audio effects",
+        "Audio normalization",
+        "Equalizer",
+        "Private notes or comments"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Remove Distracting Website Elements with Page Context",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Websites are full of distracting elements. For example, on YouTube, there\u0027s a list of images to the right of a video. This is likely useless information that wastes your time.\\nUsing the Page Context extension, you can hide such elements. For example, to hide distracting images to the right of a video, you can create a visual effect that makes these elements transparent.\\nTo do this, create a visual effect using the button in the Page Context extension popup. Enter the selector #secondary.ytd-watch-flexy or #secondary.ytd-watch-flexy:not(:hover) (the selector is valid as of December 26, 2025) to display on hover.\\n\\nNext, find the Opacity slider at the bottom of the page and reduce the opacity to zero or any other value. This will make the elements transparent on this page. However, to ensure this works across all of YouTube, go to the radar using the arrow at the top of the page and change the rule link to utube.com. Now you won\u0027t see these images for all YouTube video pages.\\n\\nTo change the opacity of the Share and Like buttons, you can use the selector: #secondary.ytd-watch-flexy, #top-level-buttons-computed or #secondary.ytd-watch-flexy:not(:hover), #top-level-buttons-computed:not(:hover) (the selector is valid as of December 26, 2025) to display on hover. You can see that the selector #top-level-buttons-computed has been added, separated by commas. To change the opacity of the sponsorship button, you can use the selector #secondary.ytd-watch-flexy, #top-level-buttons-computed, #sponsor-button or #secondary.ytd-watch-flexy:not(:hover), #top-level-buttons-computed:not(:hover), #sponsor-button:not(:hover) (the selector is current as of 2025-12-26) for display on hover and on the page.\\n\\nHow to find the selector yourself: click on the element in the Chrome browser, open the context menu, and then select Inspect. If you know CSS, you can choose a selector for many elements.\\n\\nThis approach to changing the visual effects of an element with the \u003Cstrong\u003EPage Context extension\u003C/strong\u003E can be applied to many websites and local web pages."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <main role="main" class="cg-faq-main-docs">
+        
+
+<div class="cg-faq-content">
+    <article class="cg-faq-article">
+        <h1>
+            Remove Distracting Website Elements with Page Context
+        </h1>
+
+
+            <img class="cg-faq-answer-img"
+                 src="/assets/images/visual-effects/hide-elements-01.png"
+                 alt="Hide YouTube Distractions with Page Context Extension" />
+
+<p>Websites are full of distracting elements. For example, on YouTube, there&#x27;s a list of images to the right of a video. This is likely useless information that wastes your time.</p>&#xD;&#xA;<p>Using the <strong><a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension</strong>, you can hide such elements. For example, to hide distracting images to the right of a video, you can create a visual effect that makes these elements transparent.</p>&#xD;&#xA;<h4>Creating a Visual Effect with <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a></h4>&#xD;&#xA;<p>To do this, create a visual effect using the button in the <strong><a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension</strong> popup. Enter the selector <code>#secondary.ytd-watch-flexy</code> or <code>#secondary.ytd-watch-flexy:not(:hover)</code> (the selector is valid as of December 26, 2025) to display on hover.</p>&#xD;&#xA;<p>Next, find the <strong>Opacity</strong> slider at the bottom of the page and reduce the opacity to zero or any other value. This will make the elements transparent on this page. However, to ensure this works across all of YouTube, go to the radar using the arrow at the top of the page and change the rule link to <code>utube.com</code>. Now you won&#x27;t see these images for all YouTube video pages.</p>&#xD;&#xA;<h4>Targeting Multiple Elements</h4>&#xD;&#xA;<p>To change the opacity of the Share and Like buttons, you can use the selector: <code>#secondary.ytd-watch-flexy, #top-level-buttons-computed</code> or <code>#secondary.ytd-watch-flexy:not(:hover), #top-level-buttons-computed:not(:hover)</code> (the selector is valid as of December 26, 2025) to display on hover. You can see that the selector <code>#top-level-buttons-computed</code> has been added, separated by commas.</p>&#xD;&#xA;<p>To change the opacity of the sponsorship button, you can use the selector <code>#secondary.ytd-watch-flexy, #top-level-buttons-computed, #sponsor-button</code> or <code>#secondary.ytd-watch-flexy:not(:hover), #top-level-buttons-computed:not(:hover), #sponsor-button:not(:hover)</code> (the selector is current as of 2025-12-26) for display on hover and on the page.</p>&#xD;&#xA;<h4>Finding Selectors Yourself</h4>&#xD;&#xA;<p>How to find the selector yourself: click on the element in the Chrome browser, open the context menu, and then select <strong>Inspect</strong>. If you know CSS, you can choose a selector for many elements.</p>&#xD;&#xA;<p>This approach to changing the visual effects of an element using the <strong><a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension</strong> can be applied to many websites and local web pages.</p>    </article>
+        <section>
+            <h2>Related questions</h2>
+                <article class="cg-faq-article">
+                    <h3>
+                        <a href="../adjust-audio-video-speed-pitch-without-artifacts-in-browser/"
+                           title="Adjust Audio/Video Speed &amp; Pitch Without Artifacts in Browser">
+                            Adjust Audio/Video Speed &amp; Pitch Without Artifacts in Browser
+                        </a>
+                    </h3>
+Learn how to change audio/video speed and pitch without artifacts using the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension. Create custom playlists from web clips and local files.                </article>
+        </section>
+</div>
+
+    </main>
+    <footer>
+        <a href="https://page-context.a-voronov.space/"
+           title="Page context">Page context</a>
+    </footer>
+    <script>
+        (() => {
+            const locationKey = 'locationKey';
+
+            if (sessionStorage.getItem(locationKey) === null) {
+                const locationInfo = {
+                    pathname: location.pathname,
+                    search: location.search
+                };
+                
+                sessionStorage.setItem(locationKey, JSON.stringify(locationInfo));
+            }
+        })();
+    </script>
+</body>
+</html>
