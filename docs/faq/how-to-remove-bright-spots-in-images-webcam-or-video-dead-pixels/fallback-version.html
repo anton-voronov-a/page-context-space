@@ -1,0 +1,118 @@
+---
+permalink: faq/How-to-Remove-Bright-Spots-in-Images-Webcam-or-Video-Dead-Pixels/index.html
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How to Remove Bright Spots in Images, Webcam, or Video (Dead Pixels)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="How to Remove Bright Spots in Images, Webcam, or Video (Dead Pixels)" />
+    <meta name="description" content="Fix bright spots and dead pixels in real time on webcam video or images using the dynamic dead pixel correction feature in the Page context extension." />
+    <meta name="keywords" content="dead pixel correction, bright spot removal, webcam video fix, dynamic dead pixel correction, Page context extension, real time pixel repair, GPU video filter, image defect removal" />
+    <link rel="canonical" href="https://page-context.a-voronov.space/faq/how-to-remove-bright-spots-in-images-webcam-or-video-dead-pixels/" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon-128.png">
+        <link rel="stylesheet" href="/assets/css/faq.css">
+        <link rel="stylesheet" href="/assets/css/common.css">
+    <script type="application/ld&#x2B;json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "screenshot": "https://page-context.a-voronov.space/assets/social/01-popup-demo-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Anton Voronov",
+        "jobTitle": "Full-Stack Developer",
+        "sameAs": [
+          "https://www.youtube.com/@page-context"
+        ]
+      },
+      "name": "Page context",
+      "description": "Fix bright spots and dead pixels in real time on webcam video or images using the dynamic dead pixel correction feature in the Page context extension.",
+      "applicationCategory": "Browser Extension",
+      "keywords": "dead pixel correction, bright spot removal, webcam video fix, dynamic dead pixel correction, Page context extension, real time pixel repair, GPU video filter, image defect removal",
+      "featureList": [
+        "Visual effects",
+        "Brightness",
+        "3D anaglyph",
+        "Audio effects",
+        "Audio normalization",
+        "Equalizer",
+        "Private notes or comments"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to Remove Bright Spots in Images, Webcam, or Video (Dead Pixels)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Find the effect Dynamic dead pixel correction and select Light or Full in the Page context extension. This real time adaptive solution fixes bright spots and dead pixels without static masks or quality loss."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <main role="main" class="cg-faq-main-docs">
+        
+
+<div class="cg-faq-content">
+    <article class="cg-faq-article">
+        <h1>
+            How to Remove Bright Spots in Images, Webcam, or Video (Dead Pixels)
+        </h1>
+
+
+            <img class="cg-faq-answer-img"
+                 src="/assets/images/main/06-dead-pexels-01.png"
+                 alt="How to Remove Bright Spots in Images, Webcam Video, or Video (Dead Pixels)" />
+
+<h4>Problem</h4>&#xD;&#xA;<p>During camera operation, pixels may light up and disappear &#x201C;live.&#x201D; Heating and changes in ISO alter the physical operating characteristics of the semiconductor sensor, causing defects to appear in real time.</p>&#xD;&#xA;&#xD;&#xA;<h4>Short answer</h4>&#xD;&#xA;<p><strong>How to fix it:</strong> find the <strong>&#x201C;Dynamic dead pixel correction&#x201D;</strong> effect and select <strong>&#x201C;Light&#x201D;</strong> in the <strong><a href="https://page-context.a-voronov.space/" title="Page context">Page context</a></strong> extension.</p>&#xD;&#xA;<p><strong>Result:</strong> bright spots stop glowing.</p>&#xD;&#xA;<p>There is also a <strong>&#x201C;Full&#x201D;</strong> mode, but it is suitable for powerful video cards, or for weaker ones if you apply the effect to a regular image rather than video. The source and type do not matter. What matters is that the frame is not scaled.</p>&#xD;&#xA;&#xD;&#xA;<h4>How people usually solve this</h4>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Intuitive simple solution.</strong> Such pixels can easily be made less noticeable by reducing the camera resolution. The algorithm averages neighboring pixels, and you get a result where almost 100% of pixels are distorted for the sake of a few very noticeable pixels.</li>&#xD;&#xA;<li><strong>Professional complex solution.</strong> Put a cap on the camera, warm it up to operating temperature, etc. Then the algorithm creates a permanent mask for correction.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>Problems with common approaches</h4>&#xD;&#xA;<ol>&#xD;&#xA;<li>It does not solve the problem when defective pixels appear right now. Every time people do this, they have already spoiled something before they start fixing it.</li>&#xD;&#xA;<li>A mask removes information about pixels for a long time, even though those pixels may work normally at another ISO or a lower temperature. You can remap defective pixels in hot conditions and block pixels that work normally in cold conditions.</li>&#xD;&#xA;<li>Such functions are not implemented for all cameras.</li>&#xD;&#xA;<li>All of this requires knowledge and skill.</li>&#xD;&#xA;<li>If your camera has a low resolution, you will noticeably lose quality when downscaling.</li>&#xD;&#xA;<li>Most correction algorithms work as a &#x201C;black box&#x201D; &#x2014; the user can only turn them on or off, without knowing how many useful details in the frame were destroyed.</li>&#xD;&#xA;</ol>&#xD;&#xA;<p>The defect is dynamic, so an adaptive local solution is needed, not a static mask and not global averaging.</p>&#xD;&#xA;<p>Remapping is suitable for stable defects on a specific camera, but dynamic correction is needed because it works when defects appear/disappear depending on conditions.</p>&#xD;&#xA;&#xD;&#xA;<h4>Solution via the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension</h4>&#xD;&#xA;<p>You can select the <strong>&#x201C;Light&#x201D;</strong> or <strong>&#x201C;Full&#x201D;</strong> preset, which works in real time and adapts to each frame. The decision is made based on the current frame, not on a saved mask. No knowledge is required to start a preset, while fine tuning is available for those who need it. For professional correction, there are many parameters for adjustment with suitable visualization of the different algorithm stages. If a pixel has just become defective or has just stopped being defective, the algorithm adapts instantly. When switching to another camera, the algorithm requires no special actions; it works with any image, even video and pictures from the internet. It does not spoil all pixels as downscaling does &#x2014; it changes only detected defective pixels on the fly.</p>&#xD;&#xA;&#xD;&#xA;<h4>Capabilities</h4>&#xD;&#xA;<p>You can limit the algorithm&#x2019;s operation by specifying which camera it should apply to, so that high-resolution cameras are not affected due to additional GPU load. You can specify a text template for the camera name to apply it to the desired camera.</p>&#xD;&#xA;&#xD;&#xA;<h4>Presets</h4>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Light</strong> &#x2014; cheaper on GPU, precise per-channel correction, but the patch may stand out and does not cover a blurred defect.</li>&#xD;&#xA;<li><strong>Full</strong> &#x2014; more expensive on GPU, expanded patch with edge blending, higher quality.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>Stages</h4>&#xD;&#xA;&#xD;&#xA;<h4>&#x201C;Final result&#x201D; stage</h4>&#xD;&#xA;<p><strong>How it works</strong></p>&#xD;&#xA;<p>The algorithm creates patches and replaces defects with them. In the final stage, you can adjust the degree to which the patches are blended with the original image. The algorithm uses two types of patches: a precise per-channel patch and an expanded patch with edge blending.</p>&#xD;&#xA;<p>The precise per-channel patch works on the channel where the deviation was found, but this may not be enough for two reasons:</p>&#xD;&#xA;<ol>&#xD;&#xA;<li>The replacement is made with a patch that may stand out.</li>&#xD;&#xA;<li>The defect may be blurred across several pixels.</li>&#xD;&#xA;</ol>&#xD;&#xA;<p>To solve these problems, there is an expanded patch that blends with the original, gradually fading toward the edges. However, the expanded patch cannot work normally per-channel because the channels of the original and the expanded patch are inconsistent. Using only the defective channel in the expanded patch would lead to color distortions, so the expanded patch affects all color channels.</p>&#xD;&#xA;<p><strong>Parameter adjustment</strong></p>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Precise mask strength.</strong> Adjusts the degree to which the precise per-channel per-pixel patch is blended with the original.</li>&#xD;&#xA;<li><strong>Expanded mask strength.</strong> Adjusts the degree of blending with the expanded patch.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>&#x201C;Edge blending&#x201D; stage</h4>&#xD;&#xA;<p><strong>How it works</strong></p>&#xD;&#xA;<p>At the edge-blending stage of the expanded patch, the patch size and the blending of its edges with the original are configured.</p>&#xD;&#xA;<p>To calculate the base for the patch, the detected defective pixel is enlarged in size across all channels, even if the defect is only on one channel. The resulting expanded area is blended with the original.</p>&#xD;&#xA;<p><strong>Display</strong></p>&#xD;&#xA;<p>An additional view shows a black-and-white expanded map of detected defects. You can see in real time how its shape changes when its settings are adjusted.</p>&#xD;&#xA;<p><strong>Parameter adjustment</strong></p>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Blend size.</strong> The radius of the expansion zone around the defective pixel. The smaller this size, the smaller the patch halo will be. The larger the value, the larger the area of defects around the defective pixel itself will be corrected. You should start increasing the size while watching how the damaged zone around its central point disappears. Do not increase the size unnecessarily, otherwise useless artifacts from the algorithm will appear in the form of blurred areas.</li>&#xD;&#xA;<li><strong>Blend blur ratio.</strong> The blur radius of the blending zone, expressed as a coefficient relative to the blend size.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>&#x201C;Replacement material&#x201D; stage</h4>&#xD;&#xA;<p>A blurred original image is used to replace the area of defective pixels.</p>&#xD;&#xA;<p><strong>Skin blur radius.</strong> Sets the blur radius for the blurred original image. The larger this radius, the less the patch on the defective pixel resembles the area of the defective pixel and its immediate surroundings, but the patch may deviate too much from neighboring pixels &#x2014; this is useful when a whole group of pixels is defective. With a small radius value, the patch can more accurately match neighboring pixels, but the defect itself may be hidden worse &#x2014; this is useful when the defect is small in area.</p>&#xD;&#xA;&#xD;&#xA;<h4>&#x201C;Confirmed defects&#x201D; stage</h4>&#xD;&#xA;<p><strong>How it works</strong></p>&#xD;&#xA;<p>At this stage, the algorithm&#x2019;s response to the geometric model of defective pixels is configured. Here you set how the adaptive brightness of a defective pixel relates to the maximum of that brightness among surrounding pixels.</p>&#xD;&#xA;<p>The brightness ratio of pixels can involve both large and small absolute values, but small absolute differences are barely noticeable to the eye. Therefore, the maximum adaptive increase in absolute brightness values for the algorithm is limited here.</p>&#xD;&#xA;<p><strong>Display</strong></p>&#xD;&#xA;<p>An additional view shows a map of detected defects that changes in real time, and the user sees the boundary between digital sensor noise and real defects.</p>&#xD;&#xA;<p><strong>Parameter adjustment</strong></p>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Maximum gain (Db).</strong> Limits sensitivity in absolute brightness. It shows the limit to which brightness can be increased to detect defective pixels. That is, the larger the value, the less bright defects can be detected. The algorithm itself has artifacts, so in order not to make things worse than they were, defective pixels that are poorly visible probably should not be improved; that is, you should increase the parameter value carefully so that the negative effect does not outweigh the positive one. If you increase the value too much, you can reach a level where you simply start correcting noise and add many artifacts. But if you do not increase it enough, some defective pixels will not be detected at all.</li>&#xD;&#xA;<li><strong>Peak ratio.</strong> Sets the minimum ratio of the adaptive brightness of the detected pixel to the maximum of that brightness among neighboring pixels.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>&#x201C;Potential defects&#x201D; stage</h4>&#xD;&#xA;<p><strong>How it works</strong></p>&#xD;&#xA;<p>At this stage, geometric parameters for identifying defective pixels are configured. Here you see a pattern that helps detect defective pixels.</p>&#xD;&#xA;<p>As a rule, you see dark frames around bright pixels.</p>&#xD;&#xA;<p><strong>Display</strong></p>&#xD;&#xA;<p>In the additional view, you can see how the algorithm recognizes defects internally. The dark frames show how the algorithm&#x2019;s settings fit geometrically for detecting defects, and the brightness of the defects themselves is adaptively amplified.</p>&#xD;&#xA;<p><strong>Parameter adjustment</strong></p>&#xD;&#xA;<ol>&#xD;&#xA;<li><strong>Defect radius.</strong> Here you define the radius within which the algorithm excludes data for calculating the reference brightness value. The higher the parameter value, the larger the recognition zone radius. Usually this value should be from 1 to 3 pixels. With a small radius value, the algorithm poorly recognizes large defective areas, but large values will lead to nearby defects not being detected. When tuning, you should cover the entire defect with dark frames, but not neighboring ones.</li>&#xD;&#xA;<li><strong>Reference border thickness ratio.</strong> This is the frame thickness as a fraction of the defect radius. The frame is the reference value for determining an anomaly. The wider the frame, the fewer pixels can be detected.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>Limitations</h4>&#xD;&#xA;<p>The algorithm works well only on a raw frame without scaling, because it needs the original pixel due to its brightness. If you change the scale, there is almost no point in using the algorithm: it will try to remove much larger objects than pixels, and the information for detecting defects will become difficult to access.</p>&#xD;&#xA;    </article>
+        <section>
+            <h2>Related questions</h2>
+                <article class="cg-faq-article">
+                    <h3>
+                        <a href="../how-to-fix-fake-4k-quality-on-youtube/"
+                           title="How to Fix Fake 4K Quality on YouTube">
+                            How to Fix Fake 4K Quality on YouTube
+                        </a>
+                    </h3>
+Fix fake 4K quality on YouTube with the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension. Learn how to restore sharpness and contrast for clear, detailed video playback.                </article>
+        </section>
+</div>
+
+    </main>
+    <footer>
+        <a href="https://page-context.a-voronov.space/"
+           title="Page context">Page context</a>
+    </footer>
+    <script>
+        (() => {
+            const locationKey = 'locationKey';
+
+            if (sessionStorage.getItem(locationKey) === null) {
+                const locationInfo = {
+                    pathname: location.pathname,
+                    search: location.search
+                };
+                
+                sessionStorage.setItem(locationKey, JSON.stringify(locationInfo));
+            }
+        })();
+    </script>
+</body>
+</html>

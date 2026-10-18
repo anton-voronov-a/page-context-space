@@ -106,6 +106,10 @@
         Filters
     </h3>
     <ol>
+        <li> Dynamic low-light enhancement (Dynamic darkness lightening).</li>
+        <li> Brightness and contrast adjustment (Brightness / Contrast lens).</li>
+        <li> Brightness remapping.</li>
+        <li> Dynamic dead pixel correction.</li>
         <li>
             Brightness amplitude, including RGB components.
         </li>
@@ -156,6 +160,27 @@
         <li>
             Opacity.
         </li>
+    </ol>
+
+    <p>
+    Many visual effects can be linked to the webcam.
+    Additionally, preferred webcam properties can be overridden:
+    </p>
+    <ol>
+        <li>Width.</li>
+        <li>Height.</li>
+        <li>Frame rate.</li>
+        <li>Aspect ratio.</li>
+    </ol>
+
+    <h3>
+        Visual transformation
+    </h3>
+    <ol>
+        <li>Scaling along axes, both simultaneously along all axes and individually.</li>
+        <li>Rotation.</li>
+        <li>Shear along each axis.</li>
+        <li>Tilt along each axis.</li>
     </ol>
 </section>
 <section>
@@ -321,7 +346,7 @@ Learn how to fix uneven sound levels in videos and audio files using the Page Co
         (() => {
             const knownUtmSources = new Set(['founder', 'vip', 'ext-cg']);
             const knownUtmContentValues = new Set(['comments', 'equalizer']);
-            const knownFaqPaths = ["how-to-fix-fake-4k-quality-on-youtube","create-perfect-youtube-timestamps-in-real-time","how-to-fix-uneven-sound-levels-in-videos-and-audio-files","remove-distracting-website-elements-with-page-context","adjust-audio-video-speed-pitch-without-artifacts-in-browser","how-to-create-media-quote-clips-with-page-context-extension","is-there-a-way-to-set-a-specific-time-to-watch-in-youtube","how-to-remove-bright-spots-in-images-webcam-video-or-video-dead-pixels"];
+            const knownFaqPaths = ["how-to-fix-fake-4k-quality-on-youtube","create-perfect-youtube-timestamps-in-real-time","how-to-fix-uneven-sound-levels-in-videos-and-audio-files","remove-distracting-website-elements-with-page-context","adjust-audio-video-speed-pitch-without-artifacts-in-browser","how-to-create-media-quote-clips-with-page-context-extension","is-there-a-way-to-set-a-specific-time-to-watch-in-youtube","how-to-remove-bright-spots-in-images-webcam-or-video-dead-pixels"];
             const utmSourcesKey = 'utm_source';
             const utmContentKey = 'utm_content';
             const locationInfoJson = sessionStorage.getItem('locationKey');
