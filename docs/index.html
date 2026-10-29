@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Page context</title>
+    <title>Page context: video filter, audio filter, video notes for Chrome &amp; Edge</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Page context" />
-    <meta name="description" content="Enhance any page with advanced visual and audio effects using this browser extension with local and online support." />
-    <meta name="keywords" content="browser extension, visual effects, audio filters, video enhancement, CSS selector, color correction, audio equalizer, sound normalization, 3D anaglyph, contrast sharpening, brightness control, local data, interactive notes, web customization, multimedia tools, page transformation, video filters, sound filters, web visual editor, extension features" />
+    <meta name="title" content="Page context: video filter, audio filter, video notes for Chrome &amp; Edge" />
+    <meta name="description" content="Fixes dark or low-quality video and webcam image, corrects uneven audio volume, and adds notes and video timestamps directly on any web page." />
+    <meta name="keywords" content="chrome video filters, fix webcam quality, webcam low light, video brightness contrast, fix fake 4k, audio normalization extension, video equalizer extension, youtube timestamps extension, video color filters, dead pixel fix, webcam aspect ratio, video effects extension" />
     <link rel="canonical" href="https://page-context.a-voronov.space/" />
     <link rel="icon" type="image/png" href="/assets/icon-128.png">
     
@@ -40,17 +40,17 @@
         ]
       },
       "name": "Page context",
-      "description": "Enhance any page with advanced visual and audio effects using this browser extension with local and online support.",
+      "description": "Fixes dark or low-quality video and webcam image, corrects uneven audio volume, and adds notes and video timestamps directly on any web page.",
       "applicationCategory": "Browser Extension",
-      "keywords": "browser extension, visual effects, audio filters, video enhancement, CSS selector, color correction, audio equalizer, sound normalization, 3D anaglyph, contrast sharpening, brightness control, local data, interactive notes, web customization, multimedia tools, page transformation, video filters, sound filters, web visual editor, extension features",
+      "keywords": "chrome video filters, fix webcam quality, webcam low light, video brightness contrast, fix fake 4k, audio normalization extension, video equalizer extension, youtube timestamps extension, video color filters, dead pixel fix, webcam aspect ratio, video effects extension",
       "featureList": [
-        "Visual effects",
-        "Brightness",
-        "3D anaglyph",
-        "Audio effects",
-        "Audio normalization",
-        "Equalizer",
-        "Private notes or comments"
+        "Visual filters and 3D anaglyph",
+        "Webcam property overrides",
+        "Audio effects, equalizer and normalization",
+        "Interactive timecoded notes and clips",
+        "Playlists for video and audio",
+        "Page-specific rules (CSS selectors, metadata)",
+        "Local data storage (import/export)"
       ],
       "offers": {
         "@type": "Offer",
@@ -316,7 +316,7 @@
                         How to Fix Fake 4K Quality on YouTube
                     </a>
                 </h3>
-Fix fake 4K quality on YouTube with the Page Context extension. Learn how to restore sharpness and contrast for clear, detailed video playback.            </article>
+Fix fake 4K quality on YouTube with the Page context extension. Learn how to restore sharpness and contrast for clear, detailed video playback.            </article>
             <article>
                 <h3>
                     <a href="https://page-context.a-voronov.space/faq/create-perfect-youtube-timestamps-in-real-time/"
@@ -332,7 +332,7 @@ Create YouTube timestamps in real-time with Page context extension. Test instant
                         How to Fix Uneven Sound Levels in Videos and Audio Files
                     </a>
                 </h3>
-Learn how to fix uneven sound levels in videos and audio files using the Page Context browser extension for audio normalization and filtering.            </article>
+Learn how to fix uneven sound levels in videos and audio files using the Page context browser extension for audio normalization and filtering.            </article>
     </section>
 
 
@@ -374,8 +374,8 @@ Learn how to fix uneven sound levels in videos and audio files using the Page Co
             }
 
             if (utmContent === null) {
-                const pathes = (pathname || '').toLowerCase().split('/');
-                const faqPath = pathes[2];
+                const paths = (pathname || '').toLowerCase().split('/');
+                const faqPath = paths[2];
 
                 if (knownFaqPaths.includes(faqPath)) {
                     validSearchParams.set(utmContentKey, faqPath);

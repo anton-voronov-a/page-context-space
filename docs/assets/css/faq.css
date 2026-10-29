@@ -96,3 +96,18 @@ footer {
     width: var(--cr-embedded-width);
     height: calc(var(--cr-embedded-width) * 315 / 560);
 }
+
+.cms-faq-meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .25rem 1rem;
+    font-family: cursive;
+}
+
+    .cms-faq-meta dt {
+        opacity: .6;
+    }
+
+    .cms-faq-meta dd {
+        margin: 0;
+    }
