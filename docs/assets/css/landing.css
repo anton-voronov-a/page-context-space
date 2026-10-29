@@ -150,7 +150,8 @@ header a {
     color: var(--cg-primary-color);
 }
 
-.yp-homepage-capabily-description {
+.yp-homepage-capabily-description,
+.yp-homepage-capability-description {
     color: rgb(112 135 161);
     font-style: italic;
 }
