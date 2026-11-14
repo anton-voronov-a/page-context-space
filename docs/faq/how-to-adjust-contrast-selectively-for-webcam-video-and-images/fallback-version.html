@@ -1,0 +1,145 @@
+---
+permalink: faq/How-to-Adjust-Contrast-Selectively-for-Webcam-Video-and-Images/index.html
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How to Adjust Contrast Selectively for Webcam, Video, and Images</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="How to Adjust Contrast Selectively for Webcam, Video, and Images" />
+    <meta name="description" content="Adjust contrast selectively for webcam, video, and images with the Page Context extension&#x2019;s brightness lens, focus gain, and tone curve controls." />
+    <meta name="keywords" content="Page Context extension, selective contrast adjustment, brightness lens, contrast lens, webcam contrast, video contrast, image contrast, tone curve control, focus gain, focus shift, linearity blend, Cherry-colored skin preset, selective brightness, codec skin detail, webcam skin tone" />
+    <link rel="canonical" href="https://page-context.a-voronov.space/faq/how-to-adjust-contrast-selectively-for-webcam-video-and-images/" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon-128.png">
+        <link rel="stylesheet" href="/assets/css/faq.css">
+        <link rel="stylesheet" href="/assets/css/common.css">
+    <script type="application/ld&#x2B;json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "screenshot": "https://page-context.a-voronov.space/assets/social/01-popup-demo-01.png",
+      "author": {
+        "@type": "Person",
+        "name": "Anton Voronov",
+        "jobTitle": "Full-Stack Developer",
+        "sameAs": [
+          "https://www.youtube.com/@page-context"
+        ]
+      },
+      "name": "Page context",
+      "description": "Adjust contrast selectively for webcam, video, and images with the Page Context extension\u2019s brightness lens, focus gain, and tone curve controls.",
+      "applicationCategory": "Browser Extension",
+      "keywords": "Page Context extension, selective contrast adjustment, brightness lens, contrast lens, webcam contrast, video contrast, image contrast, tone curve control, focus gain, focus shift, linearity blend, Cherry-colored skin preset, selective brightness, codec skin detail, webcam skin tone",
+      "featureList": [
+        "Visual filters and 3D anaglyph",
+        "Webcam property overrides",
+        "Audio effects, equalizer and normalization",
+        "Interactive timecoded notes and clips",
+        "Playlists for video and audio",
+        "Page-specific rules (CSS selectors, metadata)",
+        "Local data storage (import/export)"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to Adjust Contrast Selectively for Webcam, Video, and Images",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select the \uD83C\uDF52 Cherry-colored skin preset for the Brightness / Contrast lens effect in the Page Context extension. Use the brightness lens to set focus gain, brightness level, focus shift, linearity blend, strength, bright focus exponent, and dark focus exponent so contrast changes only around the chosen tone-curve area. This preserves skin detail for webcam, video, and images while avoiding the problems of ordinary contrast and gamma adjustments."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <main role="main" class="cg-faq-main-docs">
+        
+
+<div class="cg-faq-content">
+    <article class="cg-faq-article">
+        <h1>
+            How to Adjust Contrast Selectively for Webcam, Video, and Images
+        </h1>
+
+
+            <img class="cg-faq-answer-img"
+                 src="/assets/images/main/08-contrast-lens-01.png"
+                 alt="How to Adjust Contrast Selectively for Webcam, Video, and Images (Page Context)" />
+
+<p><strong>Short answer:</strong><br>Select the <strong>&#x201C;&#x1F352; Cherry-colored skin&#x201D;</strong> preset for the <strong>&#x201C;Brightness / Contrast lens&#x201D;</strong> effect in the <strong><a href="https://page-context.a-voronov.space/" title="Page context">Page context</a></strong> extension.</p>&#xD;&#xA;&#xD;&#xA;<h4>What you can achieve by changing contrast in a specified place</h4>&#xD;&#xA;<ol>&#xD;&#xA;  <li>Real skin color instead of what default camera settings produce.</li>&#xD;&#xA;  <li>Highlight the desired celestial bodies in space.</li>&#xD;&#xA;  <li>Transmit useful information over the network instead of useless information.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<p>When using a webcam, people often transmit information about a person, but it is transmitted along with information about walls and furniture. The codec takes all this information and compresses it, treating the person and the furniture as equivalent. By changing contrast in the desired place, where there is the maximum amount of information about human skin, you can force the codec to preserve more information about the skin at the expense of unnecessary background information. This happens by increasing the brightness range specifically for the skin and reducing it over the rest of the image. This approach works reliably, unlike the approach where you need to blur something behind the person by cutting out the background, although the goal is the same &#x2014; to focus specifically on the person. You do not cut off ears with an algorithm; it works in the color dimension, not in the spatial dimension.</p>&#xD;&#xA;&#xD;&#xA;<h4>How contrast is usually changed</h4>&#xD;&#xA;<ol>&#xD;&#xA;  <li>Using contrast.</li>&#xD;&#xA;  <li>Using gamma.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>What problems ordinary contrast-changing approaches have</h4>&#xD;&#xA;<ol>&#xD;&#xA;  <li>Neither of the mentioned methods is aimed at correcting the area you specify. You are forced to break contrast in areas where you do not need to change it in order to change what you do need.</li>&#xD;&#xA;  <li>For contrast:&#xD;&#xA;    <ol>&#xD;&#xA;      <li>Increasing contrast leads to loss of information in the dark and bright parts.</li>&#xD;&#xA;      <li>Decreasing contrast raises or lowers brightness, which essentially means you are narrowing the brightness range, that is, not using the capabilities of your monitor.</li>&#xD;&#xA;      <li>You do not control the point on the tone curve with maximum contrast. All points have the same slope on the tone curve, meaning you cannot choose the exact place on the curve you want to focus on.</li>&#xD;&#xA;    </ol>&#xD;&#xA;  </li>&#xD;&#xA;  <li>For gamma:&#xD;&#xA;    <ol>&#xD;&#xA;      <li>By changing gamma, you immediately change overall brightness, which requires additional brightness adjustment to compensate.</li>&#xD;&#xA;      <li>Instability when crossing 1. On the brightness tone curve, with gamma less than 1, the maximum slope will be at point (0, 0) and the minimum at point (1, 1). If gamma is greater than 1, the maximum slope will be at point (1, 1), and the minimum will be zero at point (0, 0). That is, you have a gamma slider, but when passing through 1, the slider value sharply flips both extreme slope points. The problem with the effect also lies in the fact that, upon reaching 1, the visibility of changes from the effect decreases, so you may not even notice that you have already crossed this point with a sharp flip.</li>&#xD;&#xA;      <li>There is no ability to set a value with the maximum contrast effect; the maximum effect appears only at the extreme points (0, 0) and (1, 1) on the tone curve.</li>&#xD;&#xA;      <li>By changing contrast, you do not work symmetrically around the area you need on the tone curve. If you want the slope of the curve to be symmetrical around the desired area, it will not work: the slope of the curve either grows or falls across the entire curve, not around the desired area.</li>&#xD;&#xA;    </ol>&#xD;&#xA;  </li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>Solution via the brightness lens in the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension</h4>&#xD;&#xA;<ol>&#xD;&#xA;  <li>By increasing contrast, you do not lose part of the brightness range.</li>&#xD;&#xA;  <li>By decreasing contrast, you do not narrow the brightness range; the range remains, and you only smoothly redistribute contrast along the curve.</li>&#xD;&#xA;  <li>You can set the exact position of the point on the tone curve with the desired contrast.</li>&#xD;&#xA;  <li>The effect fades as it moves away from the point, acting where you need it.</li>&#xD;&#xA;  <li>When moving the point with the maximum contrast change, overall brightness remains stable.</li>&#xD;&#xA;  <li>When changing settings, there are no sharp changes in the position of the point with the maximum contrast change.</li>&#xD;&#xA;</ol>&#xD;&#xA;&#xD;&#xA;<h4>Core</h4>&#xD;&#xA;<p>In the core of the algorithm, you set the main goals for the contrast lens effect.</p>&#xD;&#xA;<p>Algorithm goals:</p>&#xD;&#xA;<ol>&#xD;&#xA;  <li>Relative brightness level.</li>&#xD;&#xA;  <li>Position of the contrast gain point (focus point).</li>&#xD;&#xA;  <li>Contrast gain for the focus point.</li>&#xD;&#xA;</ol>&#xD;&#xA;<p>Each algorithm goal can be changed independently &#x2014; this makes it possible to change settings without spoiling the other goals.</p>&#xD;&#xA;&#xD;&#xA;<h4>Focus gain (dB)</h4>&#xD;&#xA;<p>Sets contrast as the slope of the tone curve at the desired point in decibels. Here you can decide how much you need to change the contrast.</p>&#xD;&#xA;&#xD;&#xA;<h4>Brightness level</h4>&#xD;&#xA;<p>The relative brightness level. Here you can decide how much brighter it should be. You cannot change brightness arbitrarily while preserving the contrast goal, because this requires changing the tone curve, and its curvature is limited by the contrast goal. However, you can set the relative position between the possible boundaries of the brightness level. This is exactly where this relative brightness position is set.</p>&#xD;&#xA;&#xD;&#xA;<h4>Focus shift</h4>&#xD;&#xA;<p>Shift of the output brightness of the focus point. The shift is made relative to the gray value of the output brightness. Here you can decide in which place of the tone curve the effect should act more strongly. With this parameter, you can control the &#x201C;lens position,&#x201D; meaning you can change the position of the lens&#x2019;s maximum influence on the tone curve. In practice, we need to strengthen a specific area while weakening the rest; here we can choose the place for this contrast-gain area.</p>&#xD;&#xA;&#xD;&#xA;<h4>Linearity blend</h4>&#xD;&#xA;<p>Linear blending allows a smooth transition from a power function to a linear one away from the contrast-change area. This helps choose the best of both approaches.</p>&#xD;&#xA;<p>Approaches:</p>&#xD;&#xA;<ol>&#xD;&#xA;  <li>Power approach. A power function has pros and cons. It helps set the desired slope at the specified point and smoothly transition to the edges, but the smooth transition to the edges creates an extreme slope at the edges, so at the extreme points, far from the desired point, you can use a linear approach with a slope that is better suited.</li>&#xD;&#xA;  <li>Linear approach. A linear function cannot produce a smooth tone curve at the point where the slope is set, but at the edges far from this point it often gives a more suitable slope.</li>&#xD;&#xA;</ol>&#xD;&#xA;<p>At the point that sets the contrast strength, only the power component always works, meaning the linear component there is always zero under any settings.</p>&#xD;&#xA;&#xD;&#xA;<h4>Strength</h4>&#xD;&#xA;<p>The weight of the linear component at the edges of the tone curve.</p>&#xD;&#xA;<p>If the contrast gain is positive, sometimes it may seem that some dark details are too dark, so by increasing the strength of linear blending, you can smoothly bring back unnoticeable details. Bringing back details will affect both the dark and light parts.</p>&#xD;&#xA;<p>At a value of 0, only the power component of the tone curve will work.</p>&#xD;&#xA;<p>It sets both directions, light and dark, with one parameter; otherwise, the transition from the light to the dark part would become less smooth on the tone curve.</p>&#xD;&#xA;<p><strong>Example</strong></p>&#xD;&#xA;<p>Conditions: you increased contrast by setting Focus gain, and Strength is 0.</p>&#xD;&#xA;<p>Problem: you see that the dark details have become so dark that they are difficult to make out.</p>&#xD;&#xA;<p>Solution: gradually increase Strength until the details become sufficiently distinguishable again.</p>&#xD;&#xA;&#xD;&#xA;<h4>Bright focus exponent</h4>&#xD;&#xA;<p>The exponent in the power function of the blending weights. The larger the value, the more the light part of the tone curve resembles linear behavior.</p>&#xD;&#xA;&#xD;&#xA;<h4>Dark focus exponent</h4>&#xD;&#xA;<p>The exponent in the power function of the blending weights. The larger the value, the more the dark part of the tone curve resembles linear behavior.</p>
+        <br />
+        <dl class="cms-faq-meta">
+            <dt>Author:</dt>
+            <dd>Anton Voronov</dd>
+            <dt>Published:</dt>
+            <dd>11/14/2026</dd>
+            <dt>Updated:</dt>
+            <dd>11/14/2026</dd>
+        </dl>
+    </article>
+        <section>
+            <h2>Related questions</h2>
+                <article class="cg-faq-article">
+                    <h3>
+                        <a href="../how-to-fix-fake-4k-quality-on-youtube/"
+                           title="How to Fix Fake 4K Quality on YouTube">
+                            How to Fix Fake 4K Quality on YouTube
+                        </a>
+                    </h3>
+Fix fake 4K quality on YouTube with the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension. Learn how to restore sharpness and contrast for clear, detailed video playback.                </article>
+                <article class="cg-faq-article">
+                    <h3>
+                        <a href="../create-perfect-youtube-timestamps-in-real-time/"
+                           title="Create Perfect YouTube Timestamps in Real-Time">
+                            Create Perfect YouTube Timestamps in Real-Time
+                        </a>
+                    </h3>
+Create YouTube timestamps in real-time with <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> extension. Test instantly on local videos without saving. Improve your video description workflow.                </article>
+                <article class="cg-faq-article">
+                    <h3>
+                        <a href="../how-to-fix-uneven-sound-levels-in-videos-and-audio-files/"
+                           title="How to Fix Uneven Sound Levels in Videos and Audio Files">
+                            How to Fix Uneven Sound Levels in Videos and Audio Files
+                        </a>
+                    </h3>
+Learn how to fix uneven sound levels in videos and audio files using the <a href="https://page-context.a-voronov.space/" title="Page context">Page context</a> browser extension for audio normalization and filtering.                </article>
+        </section>
+</div>
+
+    </main>
+    <footer>
+        <a href="https://page-context.a-voronov.space/"
+           title="Page context"
+           class="yp-footer-link">Page context</a>
+    </footer>
+    <script>
+        (() => {
+            const locationKey = 'locationKey';
+
+            if (sessionStorage.getItem(locationKey) === null) {
+                const locationInfo = {
+                    pathname: location.pathname,
+                    search: location.search
+                };
+                
+                sessionStorage.setItem(locationKey, JSON.stringify(locationInfo));
+            }
+        })();
+    </script>
+</body>
+</html>
